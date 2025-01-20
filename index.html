@@ -1,200 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hub - Intranet Landing Page</title>
-    <style>
-        :root {
-            --primary-color: #1a365d;
-            --secondary-color: #6b46c1;
-            --text-color: #2d3748;
-            --light-bg: #f7fafc;
-            --white: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        /* Hero Section with Banner */
-        .hero {
-            background: linear-gradient(to bottom, rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), url('https://via.placeholder.com/1920x500') no-repeat center center / cover;
-            color: var(--white);
-            padding: 4rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 300px;
-        }
-
-        .hero-content {
-            max-width: 50%;
-            padding: 0 2rem;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-        }
-
-        .hero-video {
-            width: 400px;
-            height: 225px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .play-button {
-            font-size: 2rem;
-            cursor: pointer;
-        }
-
-        /* Quick Links */
-        .quick-links {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 2rem;
-            padding: 2rem 0;
-            width: 100%;
-            text-align: center;
-        }
-
-        .link-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 1rem;
-            border-radius: 8px;
-            transition: transform 0.2s;
-        }
-
-        .link-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .link-item img {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 0.5rem;
-        }
-
-        /* News Filter */
-        .news-filter {
-            display: flex;
-            gap: 1rem;
-            padding: 2rem 0;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .filter-btn {
-            padding: 0.5rem 1rem;
-            border: none;
-            background: none;
-            cursor: pointer;
-            border-radius: 20px;
-            transition: background-color 0.2s;
-        }
-
-        .filter-btn.active {
-            background-color: var(--primary-color);
-            color: var(--white);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-content {
-                max-width: 100%;
-                margin-bottom: 2rem;
-            }
-
-            .quick-links {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .news-filter {
-                flex-wrap: wrap;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .quick-links {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    <title>Intranet Embed</title>
 </head>
-<body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Welcome, <span class="employee-name">Employee</span>!</h1>
-            <p>We are excited to have you on board! Here you'll find an onboarding checklist and resources to learn more about our team culture and leadership!</p>
-        </div>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="quick-links">
-        <div class="link-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Paylocity">
-            <span>Paylocity</span>
-        </div>
-        <div class="link-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/1040/1040231.png" alt="Benefits">
-            <span>Benefits</span>
-        </div>
-        <div class="link-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/2891/2891491.png" alt="Workday">
-            <span>Workday</span>
-        </div>
-        <div class="link-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Helpdesk">
-            <span>Helpdesk</span>
-        </div>
-        <div class="link-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Training">
-            <span>Training</span>
-        </div>
-        <div class="link-item">
-            <img src="https://cdn-icons-png.flaticon.com/512/1483/1483234.png" alt="Ask HR">
-            <span>Ask HR</span>
-        </div>
-    </div>
-
-    <!-- News Filter -->
-    <div class="news-filter">
-        <button class="filter-btn active">All News</button>
-        <button class="filter-btn">Announcements</button>
-        <button class="filter-btn">Events</button>
-        <button class="filter-btn">People</button>
-        <button class="filter-btn">Milestones</button>
-        <button class="filter-btn">In the Press</button>
-    </div>
+<body style="margin: 0; padding: 0;">
+    <iframe 
+        width="100%" 
+        height="800" 
+        style="border: none;"
+        srcdoc='
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>The Hub</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                body { 
+                    margin: 0;
+                    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                    background-color: #f5f6f8;
+                }
+                .container {
+                    padding: 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                h1 {
+                    color: #1a365d;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Welcome to The Hub</h1>
+                <p>Your intranet content will appear here.</p>
+            </div>
+        </body>
+        </html>
+        '>
+    </iframe>
 </body>
 </html>
